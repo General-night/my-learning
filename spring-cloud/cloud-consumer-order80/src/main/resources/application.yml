@@ -1,0 +1,16 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-order-consumer
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql:///cloud_learning?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: flzx3+Qc
+  mvc:
+    servlet:
+      load-on-startup: 1
+mybatis-plus:
+  type-aliases-package: com.qc.model
