@@ -1,6 +1,9 @@
 server:
   port: 7001
 eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 2000
   instance:
     # Eureka 服务端的实例名称
     hostname: eureka7001.com

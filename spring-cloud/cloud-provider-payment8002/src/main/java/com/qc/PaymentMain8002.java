@@ -3,7 +3,6 @@ package com.qc;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
@@ -12,12 +11,11 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 
 @EnableEurekaClient
-@EnableDiscoveryClient
 @Slf4j(topic = "PaymentMain8001")
 @SpringBootApplication
-public class PaymentMain8001 {
+public class PaymentMain8002 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8001.class, args);
-        log.info("PaymentMain8001 已启动......");
+        SpringApplication.run(PaymentMain8002.class, args);
+        log.info("PaymentMain8002 已启动......");
     }
 }
